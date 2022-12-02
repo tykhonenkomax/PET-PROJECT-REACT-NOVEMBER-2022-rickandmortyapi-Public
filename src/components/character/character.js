@@ -1,11 +1,18 @@
 import React from 'react';
 
-const Character = () => {
+const Character = ({id, name, status, species, type, gender}) => {
+
+
 
     return (
 
         <div>
-            Character
+            id: {id},
+            name: {name},
+            status:{status},
+            species: {species},
+            type: {type},
+            gender: {gender},
         </div>
 
     );

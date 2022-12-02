@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'RickyMyFont';
-  src: local('RickyMyFont'), url(fonts/get_schwifty.ttf) format('truetype');
+    font-family: 'RickyMyFont';
+    src: local('RickyMyFont'), url(assets/fonts/get_schwifty.ttf) format('truetype');
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

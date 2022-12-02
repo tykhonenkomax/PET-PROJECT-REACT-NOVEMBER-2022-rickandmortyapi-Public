@@ -1,10 +1,10 @@
 import {axiosServices} from "./axios.services";
 import {urls} from "../configs";
 
-const charactersServices ={
+const characterServices ={
     getAll:()=>axiosServices.get(urls.character)
 }
 
 export {
-    charactersServices
+    characterServices
 }

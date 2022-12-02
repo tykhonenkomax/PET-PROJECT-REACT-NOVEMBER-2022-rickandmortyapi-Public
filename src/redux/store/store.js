@@ -1,10 +1,10 @@
 import {combineReducers} from "redux";
 import {configureStore} from "@reduxjs/toolkit";
 
-import {charactersReducer} from "../slice/charactersSlice";
+import {characterReducer} from "../slice/charactersSlice";
 
 let rootReducer = combineReducers({
-    characters: charactersReducer
+    characters: characterReducer
 });
 
 const setupStore = () => configureStore({

@@ -1,16 +1,16 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-import {charactersServices} from "../../services/characters.services";
+import {characterServices} from "../../services/characters.services";
 
 let initialState = {
-    characters: [],
+    character: [],
     error: null,
     loading: false
 };
 const getAll = createAsyncThunk(
-    'charactersSlice/getAll',
+    'characterSlice/getAll',
     async ({rejectedWithValue}) => {
         try {
-            const {data} = await charactersServices.getAll();
+            const {data} = await characterServices.getAll();
             return data
         } catch (e) {
             return rejectedWithValue(e.response.data)
@@ -18,31 +18,31 @@ const getAll = createAsyncThunk(
     }
 )
 
-let charactersSlice = createSlice({
-    name: 'charactersSlice',
+let characterSlice = createSlice({
+    name: 'characterSlice',
     initialState,
     reducers: {},
     extraReducers: builder =>
         builder
             .addCase(getAll.fulfilled, (state, action) => {
-                state.characters = action.payload
+                state.character = action.payload.results
                 state.loading = false
             })
             .addCase(getAll.rejected, (state, action) => {
                 state.error = action.payload
                 state.loading = false
             })
-            .addCase(getAll.pending, (state, action) => {
+            .addCase(getAll.pending, (state) => {
                 state.loading = true
             })
 });
 
-const {reducer: charactersReducer} = charactersSlice
+const {reducer: characterReducer} = characterSlice
 
 const characterActions = {
     getAll,
 }
 export {
-    charactersReducer,
+    characterReducer,
     characterActions
 }
