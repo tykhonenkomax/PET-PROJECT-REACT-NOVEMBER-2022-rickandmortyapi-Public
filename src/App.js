@@ -1,14 +1,16 @@
 import './App.css';
+
 import {Route, Routes, Navigate} from "react-router-dom";
 import {MainLayouts} from "./layout/MainLayouts";
-import {Characters, Episodes, Locations, NotFoundPage} from "./components";
+import {Characters, Episodes, Home, Locations, NotFoundPage} from "./components";
 
 
 function App() {
     return (
         <Routes>
-            <Route path={'/'} element={MainLayouts}>
+            <Route path={'/'} element={<MainLayouts/>}>
                 <Route index element={<Navigate to={'home'}/>}/>
+                <Route path={'home'} element={<Home/>}/>
                 <Route path={'characters'} element={<Characters/>}/>
                 <Route path={'locations'} element={<Locations/>}/>
                 <Route path={'episodes'} element={<Episodes/>}/>

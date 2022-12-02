@@ -1,0 +1,20 @@
+a{
+    text-decoration: none;
+    color: #0FFF50;
+}
+.navBarStyle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+    font-family: RickyMyFont, serif;
+    background-color: black;
+    height: 200px;
+}
+.navbarLogoStyle{
+    height: 350px;
+    margin-top: 170px;
+}
+
+
+

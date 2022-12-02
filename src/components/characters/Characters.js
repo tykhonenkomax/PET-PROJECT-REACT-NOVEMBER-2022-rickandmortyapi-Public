@@ -1,11 +1,8 @@
-import React, {useEffect} from 'react';
-import {charactersServices} from "../../services/characters.services";
+import React from 'react';
+
 
 const Characters = () => {
 
-    useEffect(()=>{
-        charactersServices.getAll(data=> console.log(data))
-    },[])
 
     return (
 
