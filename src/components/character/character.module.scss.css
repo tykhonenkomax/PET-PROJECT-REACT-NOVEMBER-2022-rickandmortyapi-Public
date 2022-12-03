@@ -1,14 +1,54 @@
-.generalBoxCharactersStyle{
+.generalBoxCharactersStyle {
     border: 2px solid #0FFF50;
     border-radius: 12px;
-    height: 500px;
-    width: 305px;
+    height: 600px;
+    width: 320px;
     margin-bottom: 20px;
     margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.charactersCardStyle{
+
+.charactersCardStyle {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 10px;
+    color: snow;
+}
+
+.imgStyleCharacters {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px
+}
+
+.nameStyle{
+    font-size: 35px;
+    color: #f08d49;
+    font-family: Helvetica, serif;
+    margin-bottom: 10px;
+}
+.speciesStyle{
+    font-size: 15px;
+    color: snow;
+    font-family: BlinkMacSystemFont, serif;
+}
+.locationStyle{
+    font-size: 15px;
+    color: #f08d49;
+    font-family: Helvetica, serif;
+}
+.locationNameStyle{
+    font-size: 15px;
+    color: snow;
+    font-family: BlinkMacSystemFont, serif;
+}
+.button{
+    height: 50px;
+    width: 200px;
+    background: transparent;
+    border: 1px solid #0FFF50;
+    color: #0FFF50;
 }

@@ -2,7 +2,7 @@ import './App.css';
 
 import {Route, Routes, Navigate} from "react-router-dom";
 import {MainLayouts} from "./layout/MainLayouts";
-import {Characters, Episodes, Home, Locations, NotFoundPage} from "./components";
+import {CharacterDetails, Characters, EpisodeLists, Episodes, Home, Locations, NotFoundPage} from "./components";
 
 
 function App() {
@@ -12,6 +12,8 @@ function App() {
                 <Route index element={<Navigate to={'home'}/>}/>
                 <Route path={'home'} element={<Home/>}/>
                 <Route path={'character'} element={<Characters/>}/>
+                <Route path={'character/:id'} element={<CharacterDetails/>}/>
+                <Route path={'episodeLists'} element={<EpisodeLists/>}/>
                 <Route path={'location'} element={<Locations/>}/>
                 <Route path={'episode'} element={<Episodes/>}/>
                 <Route path={'*'} element={<NotFoundPage/>}/>

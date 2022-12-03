@@ -1,25 +1,25 @@
 import React from 'react';
 
 import css from './character.module.scss.css'
+import {NavLink} from "react-router-dom";
 
 const Character = ({character}) => {
     console.log(character)
 
-    let {id, name, status, species, type, gender, image} = character
+    let {id, name, species, gender, image} = character
 
     return (
-    <div className='generalBoxCharactersStyle'>
+        <div className='generalBoxCharactersStyle'>
      <span className='charactersCardStyle'>
-            <div>{<img src={image} alt={name}/>}</div>
+            <div>{<img className='imgStyleCharacters' src={image} alt={name}/>}</div>
             <br/>
-            <div>id: {id}</div>
-            <div>name: {name}</div>
-            <div>status:{status}</div>
-            <div> species: {species}</div>
-            <div>type: {type}</div>
-            <div>gender: {gender}</div>
+            <div className='nameStyle'>{name}</div>
+            <div className='speciesStyle'>{species} - {gender}</div>
+         <br/>
+         <NavLink to={id.toString()} state={character}><button className='button'> about</button></NavLink>
+
         </span>
-         </div>
+        </div>
     );
 };
 

@@ -10,7 +10,7 @@ let initialState = {
 
 const getAll = createAsyncThunk(
     'characterSlice/getAll',
-    async (_,{rejectedWithValue}) => {
+    async (_, {rejectedWithValue}) => {
         try {
             const {data} = await characterServices.getAll();
             return data
@@ -19,6 +19,7 @@ const getAll = createAsyncThunk(
         }
     }
 )
+
 
 let characterSlice = createSlice({
     name: 'characterSlice',

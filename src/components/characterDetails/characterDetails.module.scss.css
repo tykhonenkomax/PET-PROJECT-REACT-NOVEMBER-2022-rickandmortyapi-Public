@@ -1,0 +1,47 @@
+.characterDetails{
+    border: 1px solid #0FFF50;
+    border-radius: 12px;
+    height: 1300px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imgStyle{
+    height: 800px;
+}
+.xxx{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.nameStyle{
+    font-size: 35px;
+    color: #f08d49;
+    font-family: Helvetica, serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.statusStyle{
+    font-size: 25px;
+    color:#0FFF50;
+    font-family: Helvetica, serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.createdStyle{
+    font-size: 25px;
+    color:snow;
+    font-family: Helvetica, serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.locationStyleName{
+    font-size: 25px;
+    color:#f08d49;
+    font-family: Helvetica, serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

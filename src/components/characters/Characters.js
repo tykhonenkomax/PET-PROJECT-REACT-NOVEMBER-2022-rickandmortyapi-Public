@@ -24,7 +24,7 @@ const Characters = () => {
             {loading && <h1>LOADING........................!</h1>}
             {error && JSON.stringify(error)}
             {
-                characters.map(character => <Character key={character.id} character={character}/>)
+                characters.map(character => <Character key={character.id} character={character} />)
             }
         </div>
 
