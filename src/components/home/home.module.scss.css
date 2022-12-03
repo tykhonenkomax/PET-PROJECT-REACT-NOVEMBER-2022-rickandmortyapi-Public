@@ -1,37 +1,11 @@
 .generalBoxStyle{
     background-color: black;
-    height: 100vh;
+    height: 80vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
-}
-.apiStyle1{
-    color: #0FFF50;
-    font-family: RickyMyFont, serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 100px;
-    margin-bottom: 80px;
-}
-.apiStyle2{
-    color: #0FFF50;
-    font-family: RickyMyFont, serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 100px;
-
-}
-.apiStyle3{
-    margin-top: 80px;
-    color: #0FFF50;
-    font-family: RickyMyFont, serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 100px;
+    flex-direction: column;
 }
 .imgStyle{
-    height: 50%;
+    height: 60%;
 }

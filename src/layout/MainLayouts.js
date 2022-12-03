@@ -10,7 +10,6 @@ const MainLayouts = () => {
 
         <div>
            <Header/>
-            <hr/>
             <Outlet/>
         </div>
 

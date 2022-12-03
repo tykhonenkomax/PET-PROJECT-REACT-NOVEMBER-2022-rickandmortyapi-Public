@@ -4,7 +4,7 @@ import {configureStore} from "@reduxjs/toolkit";
 import {characterReducer} from "../slice/charactersSlice";
 
 let rootReducer = combineReducers({
-    characters: characterReducer
+    character: characterReducer
 });
 
 const setupStore = () => configureStore({

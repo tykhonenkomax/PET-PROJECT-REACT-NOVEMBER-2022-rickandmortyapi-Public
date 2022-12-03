@@ -1,0 +1,10 @@
+.notFound{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.imgStyle{
+    height: 700px;
+}

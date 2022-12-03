@@ -10,10 +10,10 @@ const Header = () => {
         <span className='navBarStyle'>
 
             <NavLink to={'/home'}>HOME</NavLink>
-            <NavLink to={'/characters'}>CHARACTERS</NavLink>
+            <NavLink to={'/character'}>CHARACTERS</NavLink>
             <img className='navbarLogoStyle' src={require('../../assets/logo/RickAndMorty.png')} alt="RickAndMorty"/>
-            <NavLink to={'/locations'}>LOCATIONS</NavLink>
-            <NavLink to={'/episodes'}>EPISODES</NavLink>
+            <NavLink to={'/location'}>LOCATIONS</NavLink>
+            <NavLink to={'/episode'}>EPISODES</NavLink>
         </span>
 
     );

@@ -11,9 +11,9 @@ function App() {
             <Route path={'/'} element={<MainLayouts/>}>
                 <Route index element={<Navigate to={'home'}/>}/>
                 <Route path={'home'} element={<Home/>}/>
-                <Route path={'characters'} element={<Characters/>}/>
-                <Route path={'locations'} element={<Locations/>}/>
-                <Route path={'episodes'} element={<Episodes/>}/>
+                <Route path={'character'} element={<Characters/>}/>
+                <Route path={'location'} element={<Locations/>}/>
+                <Route path={'episode'} element={<Episodes/>}/>
                 <Route path={'*'} element={<NotFoundPage/>}/>
             </Route>
         </Routes>

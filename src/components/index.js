@@ -1,5 +1,5 @@
 export * from './characters/Characters'
-export * from './character/character'
+export * from './character/Character'
 export * from './locations/Locations'
 export * from './location/Location'
 export * from './episodes/Episodes'
