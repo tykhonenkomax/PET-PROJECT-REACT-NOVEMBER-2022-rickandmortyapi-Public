@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {characterActions} from "../../redux";
 
 import {Character} from "../character/Character";
+import css from './characters.module.scss.css'
 
 
 const Characters = () => {
@@ -19,7 +20,7 @@ const Characters = () => {
 
 
     return (
-        <div>
+        <div className='charactersBoxStyle'>
             {loading && <h1>LOADING........................!</h1>}
             {error && JSON.stringify(error)}
             {
