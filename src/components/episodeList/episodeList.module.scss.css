@@ -1,0 +1,29 @@
+.generalEpisodeBox{
+    border: 1px solid #0FFF50;
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.lineStyle{
+    border-top: 2px solid #0FFF50;
+    width: 80%;
+    margin-top: 15px;
+}
+.maneStyle{
+    font-size: 20px;
+    color: #f08d49;
+    font-family: Helvetica, serif;
+}
+.style{
+    font-size: 15px;
+    color: darkolivegreen;
+    font-family: Helvetica, serif;
+    margin-bottom: 10px;
+}
