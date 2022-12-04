@@ -1,5 +1,4 @@
-import React, {useEffect} from 'react';
-import axios from "axios";
+import React from 'react';
 
 const EpisodeList = ({episodeList}) => {
 
@@ -9,9 +8,6 @@ const EpisodeList = ({episodeList}) => {
 
         <div>
 
-            {
-
-            }
         </div>
 
     );
