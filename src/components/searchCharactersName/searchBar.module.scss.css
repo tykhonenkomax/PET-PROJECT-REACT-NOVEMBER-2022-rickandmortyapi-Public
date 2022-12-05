@@ -1,0 +1,13 @@
+.searchBarStyle{
+    margin-bottom: 20px;
+    height: 40px;
+    width: 700px;
+    border-radius: 12px;
+    border: 1px solid #0FFF50;
+    padding-left: 20px ;
+}
+.searchFlex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

@@ -7,7 +7,7 @@ import css from './episodeList.module.scss.css'
 const EpisodeList = ({episodeUrl}) => {
 
     const episode = useGetEpisodeHook(episodeUrl);
-    console.log('__________________episode_________________', episode)
+
     return (
 
         <div>

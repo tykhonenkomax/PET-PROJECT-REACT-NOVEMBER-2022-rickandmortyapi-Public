@@ -19,6 +19,17 @@ const getAll = createAsyncThunk(
         }
     }
 )
+const searchCharacter = createAsyncThunk(
+    'characterSlice/searchCharacter',
+    async (name, {rejectedWithValue}) => {
+        try {
+            const {data} = await characterServices.searchCharactersByName();
+            return {data}
+        } catch (e) {
+            return rejectedWithValue(e.response.data)
+        }
+    }
+)
 
 
 let characterSlice = createSlice({
@@ -38,12 +49,20 @@ let characterSlice = createSlice({
             .addCase(getAll.pending, (state) => {
                 state.loading = true
             })
+            .addCase(searchCharacter.fulfilled, (state, action) => {
+                state.characters = action.payload
+                state.loading = false
+            })
+            .addCase(searchCharacter.pending, (state) => {
+                state.loading = true
+            })
 });
 
 const {reducer: characterReducer} = characterSlice
 
 const characterActions = {
     getAll,
+    searchCharacter
 }
 export {
     characterReducer,

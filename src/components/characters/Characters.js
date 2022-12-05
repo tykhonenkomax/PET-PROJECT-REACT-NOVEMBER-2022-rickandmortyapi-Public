@@ -5,6 +5,7 @@ import {characterActions} from "../../redux";
 
 import {Character} from "../character/Character";
 import css from './characters.module.scss.css'
+import {SearchCharactersName} from "../searchCharactersName/SearchCharactersName";
 
 
 const Characters = () => {
@@ -20,12 +21,18 @@ const Characters = () => {
 
 
     return (
-        <div className='charactersBoxStyle'>
-            {loading && <h1>LOADING........................!</h1>}
-            {error && JSON.stringify(error)}
-            {
-                characters.map(character => <Character key={character.id} character={character} />)
-            }
+
+        <div className='searchFlex'>
+            <div >
+                <SearchCharactersName/>
+            </div>
+            <div className='charactersBoxStyle'>
+                {loading && <h1>LOADING........................!</h1>}
+                {error && JSON.stringify(error)}
+                {
+                    characters.map(character => <Character key={character.id} character={character}/>)
+                }
+            </div>
         </div>
 
     );
