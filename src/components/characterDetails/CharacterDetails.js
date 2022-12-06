@@ -5,7 +5,6 @@ import css from './characterDetails.module.scss.css'
 const CharacterDetails = () => {
 
     const {state} = useLocation();
-    console.log(state)
 
     return (
 <div className='xxx'>

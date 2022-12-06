@@ -1,2 +1,2 @@
-export * from './store/store'
-export * from './slice/charactersSlice'
+export * from './store'
+export * from './slice'

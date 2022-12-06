@@ -4,7 +4,6 @@ import css from './character.module.scss.css'
 import {NavLink} from "react-router-dom";
 
 const Character = ({character}) => {
-    console.log(character)
 
     let {id, name, species, gender, image} = character
 

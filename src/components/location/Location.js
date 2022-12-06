@@ -1,11 +1,15 @@
 import React from 'react';
 
-const Location = () => {
+const Location = ({location}) => {
+
+    const {name, type, dimension, residents} =location;
+    console.log(name)
 
     return (
 
         <div>
-            Location
+            {name}
+            {type}
         </div>
 
     );

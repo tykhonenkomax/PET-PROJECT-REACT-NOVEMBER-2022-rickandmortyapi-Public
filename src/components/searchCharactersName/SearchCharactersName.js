@@ -27,7 +27,7 @@ const SearchCharactersName = () => {
                 <input className={'searchBarStyle'}
                        type="text"
                        name='name'
-                       placeholder="Search..."
+                       placeholder="Find your hero by name..."
                        onChange={(e) => setSearch(e.target.value)}
                        value={search}
                 />
