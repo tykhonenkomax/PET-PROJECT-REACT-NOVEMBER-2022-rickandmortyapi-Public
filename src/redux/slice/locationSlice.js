@@ -1,5 +1,6 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import {locationServices} from "../../services";
+import {logger} from "axios-service/lib/utils";
 
 let initialState = {
     locations: [],
@@ -13,6 +14,7 @@ const getAll = createAsyncThunk(
         try {
             const {data} = await locationServices.getAll();
             return data
+
         } catch (e) {
             return rejectedWithValue(e.response.data)
         }
@@ -20,13 +22,14 @@ const getAll = createAsyncThunk(
 );
 
 const locationSlice = createSlice({
+
     name: 'locationSlice',
     initialState,
     reducers: {},
     extraReducers: builder =>
         builder
             .addCase(getAll.fulfilled, (state, action) => {
-                state.locations = action.payload?.results
+                console.log('locationSTATE__________',state.locations = action.payload?.results);
                 state.loading = false
             })
             .addCase(getAll.rejected, (state, action) => {

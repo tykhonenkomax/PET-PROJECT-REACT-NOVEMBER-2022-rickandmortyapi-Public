@@ -8,8 +8,6 @@ const Locations = () => {
 
     const {locations, error, loading} = useSelector(state => state.location);
 
-    console.log('_______________________location____________________',locations)
-
     const dispatch = useDispatch();
 
     useEffect(() => {

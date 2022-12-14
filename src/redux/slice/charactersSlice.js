@@ -31,15 +31,15 @@ const searchCharacter = createAsyncThunk(
     }
 )
 
-
 let characterSlice = createSlice({
+
     name: 'characterSlice',
     initialState,
     reducers: {},
     extraReducers: builder =>
         builder
             .addCase(getAll.fulfilled, (state, action) => {
-                state.characters = action.payload?.results
+                console.log('charactersSTATE',state.characters = action.payload?.results);
                 state.loading = false
             })
             .addCase(getAll.rejected, (state, action) => {

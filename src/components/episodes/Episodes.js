@@ -5,11 +5,10 @@ import {Episode} from "../episode/Episode";
 
 const Episodes = () => {
 
-    const dispatch = useDispatch();
 
     const {episodes, loading, error} = useSelector(state => state.episode);
 
-    console.log('episodes.page_____________________',episodes)
+    const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(episodeAction.getAll())
