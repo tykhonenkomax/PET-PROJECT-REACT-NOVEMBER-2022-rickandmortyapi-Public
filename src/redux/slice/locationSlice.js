@@ -29,7 +29,7 @@ const locationSlice = createSlice({
     extraReducers: builder =>
         builder
             .addCase(getAll.fulfilled, (state, action) => {
-                console.log('locationSTATE__________',state.locations = action.payload?.results);
+                state.locations = action.payload?.results
                 state.loading = false
             })
             .addCase(getAll.rejected, (state, action) => {

@@ -1,13 +1,14 @@
 import React, {useEffect} from 'react';
+
 import {useDispatch, useSelector} from "react-redux";
 import {episodeAction} from "../../redux";
+
 import {Episode} from "../episode/Episode";
 
 const Episodes = () => {
 
 
     const {episodes, loading, error} = useSelector(state => state.episode);
-
     const dispatch = useDispatch();
 
     useEffect(() => {

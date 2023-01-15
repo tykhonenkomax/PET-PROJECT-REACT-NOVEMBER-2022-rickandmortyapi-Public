@@ -1,8 +1,8 @@
-import {axiosService} from "axios-service";
+import {axiosServices} from './axios.services'
 import {urls} from "../configs";
 
 const episodeServices = {
-    getAll: () => axiosService.get(urls.episode)
+    getAll: () => axiosServices.get(urls.epsodes)
 }
 export {
     episodeServices

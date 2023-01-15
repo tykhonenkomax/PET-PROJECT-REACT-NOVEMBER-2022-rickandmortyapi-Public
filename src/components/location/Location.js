@@ -1,15 +1,16 @@
 import React from 'react';
 
 const Location = ({location}) => {
-
-    const {name, type, dimension, residents} =location;
-    console.log(name)
+    console.log(location)
+    const {name, type, dimension, residents, url} = location;
 
     return (
 
         <div>
-            {name}
-            {type}
+            name: {name} <br/>
+            type: {type} <br/>
+            dimension: {dimension}
+            {url}
         </div>
 
     );

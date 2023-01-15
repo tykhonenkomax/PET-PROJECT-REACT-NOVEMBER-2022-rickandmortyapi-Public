@@ -1,8 +1,9 @@
+import {axiosServices} from './axios.services'
 import {urls} from "../configs";
-import {axiosService} from "axios-service";
+
 
 const locationServices = {
-    getAll: () => axiosService.get(urls.location)
+    getAll: () => axiosServices.get(urls.location)
 }
 
 export {

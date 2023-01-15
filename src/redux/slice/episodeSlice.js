@@ -1,4 +1,5 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+
 import {locationServices as episodeServices} from "../../services";
 
 let initialState = {
@@ -6,7 +7,6 @@ let initialState = {
     error: null,
     loading: false
 };
-
 const getAll = createAsyncThunk(
     'episodeSlice/getAll',
     async (_, {rejectedWithValue}) => {
@@ -18,8 +18,6 @@ const getAll = createAsyncThunk(
         }
     }
 )
-
-
 const episodeSlice = createSlice({
     name: 'episodeSlice',
     initialState,
@@ -27,7 +25,6 @@ const episodeSlice = createSlice({
     extraReducers: builder =>
         builder
             .addCase(getAll.fulfilled, (state, action) => {
-                console.log('episodeSTATE', state.episodes = action.payload?.results);
                 state.loading = false
             })
             .addCase(getAll.rejected, (state, action) => {

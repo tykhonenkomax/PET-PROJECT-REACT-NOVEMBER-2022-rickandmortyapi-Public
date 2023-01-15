@@ -1,4 +1,5 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+
 import {characterServices} from "../../services";
 
 let initialState = {
@@ -6,7 +7,6 @@ let initialState = {
     error: null,
     loading: false
 };
-
 
 const getAll = createAsyncThunk(
     'characterSlice/getAll',
@@ -32,14 +32,12 @@ const searchCharacter = createAsyncThunk(
 )
 
 let characterSlice = createSlice({
-
     name: 'characterSlice',
     initialState,
     reducers: {},
     extraReducers: builder =>
         builder
             .addCase(getAll.fulfilled, (state, action) => {
-                console.log('charactersSTATE',state.characters = action.payload?.results);
                 state.loading = false
             })
             .addCase(getAll.rejected, (state, action) => {
