@@ -4,6 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {locationAction} from "../../redux";
 
 import {Location} from "../location/Location";
+import css from './locations.module.scss.css'
 
 const Locations = () => {
 
@@ -17,7 +18,7 @@ const Locations = () => {
 
     return (
 
-        <div>
+        <div className='locationList'>
             {loading && <div>Loading.....!</div>}
             {error && JSON.string(error)}
             {

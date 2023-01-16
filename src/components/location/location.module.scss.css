@@ -1,0 +1,11 @@
+.locationStyle {
+    border: 2px solid #0FFF50;
+    border-radius: 12px;
+    height: 320px;
+    width: 320px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

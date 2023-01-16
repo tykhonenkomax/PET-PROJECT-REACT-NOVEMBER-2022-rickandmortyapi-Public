@@ -38,6 +38,7 @@ let characterSlice = createSlice({
     extraReducers: builder =>
         builder
             .addCase(getAll.fulfilled, (state, action) => {
+                state.characters = action.payload?.results
                 state.loading = false
             })
             .addCase(getAll.rejected, (state, action) => {

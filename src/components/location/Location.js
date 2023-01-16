@@ -1,4 +1,5 @@
 import React from 'react';
+import css from './location.module.scss.css'
 
 const Location = ({location}) => {
     console.log(location)
@@ -6,11 +7,10 @@ const Location = ({location}) => {
 
     return (
 
-        <div>
-            name: {name} <br/>
+        <div className='locationStyle'>
+            name: br {name} <br/>
             type: {type} <br/>
             dimension: {dimension}
-            {url}
         </div>
 
     );
