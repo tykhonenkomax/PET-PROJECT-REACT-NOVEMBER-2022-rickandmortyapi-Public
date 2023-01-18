@@ -1,0 +1,11 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wrapperGeneral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

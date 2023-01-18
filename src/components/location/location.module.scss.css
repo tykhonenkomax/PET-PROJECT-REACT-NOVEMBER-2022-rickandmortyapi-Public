@@ -2,7 +2,7 @@
     border: 2px solid #0FFF50;
     border-radius: 12px;
     height: 320px;
-    width: 320px;
+    width: 520px;
     margin-bottom: 20px;
     margin-left: 20px;
     display: flex;
@@ -11,4 +11,15 @@
     text-align: center;
     color: snow;
     flex-direction: column;
+}
+.buttonStyle{
+    height: 50px;
+    width: 200px;
+    background: transparent;
+    border: 1px solid #0FFF50;
+    color: #0FFF50;
+}
+.styleName{
+font-size: 20px;
+    color:#0FFF50;
 }
