@@ -9,7 +9,6 @@ import css from './locations.module.scss.css'
 const Locations = () => {
 
     const {locations, error, loading} = useSelector(state => state.location);
-
     const dispatch = useDispatch();
 
     useEffect(() => {

@@ -4,6 +4,7 @@ import {logger} from "axios-service/lib/utils";
 
 let initialState = {
     locations: [],
+    locationById:[],
     error: null,
     loading: false,
 };
@@ -20,6 +21,17 @@ const getAll = createAsyncThunk(
         }
     }
 );
+const getById = createAsyncThunk(
+    'locationSlice/getById',
+    async (id, {rejectedWithValue}) => {
+        try {
+            const {data} = await locationServices.getById(id);
+            return data
+        } catch (e) {
+            return rejectedWithValue(e.response.data)
+        }
+    }
+)
 
 const locationSlice = createSlice({
 
@@ -39,12 +51,16 @@ const locationSlice = createSlice({
             .addCase(getAll.pending, (state) => {
                 state.loading = true
             })
+            .addCase(getById.fulfilled, (state, action) => {
+                state.locationById = action.payload
+            })
 });
 
 const {reducer: locationReducer} = locationSlice;
 
 const locationAction = {
-    getAll
+    getAll,
+    getById
 }
 
 export {

@@ -3,7 +3,8 @@ import {urls} from "../configs";
 
 
 const locationServices = {
-    getAll: () => axiosServices.get(urls.location)
+    getAll: () => axiosServices.get(urls.location),
+    getById: (id) => axiosServices.get(`${urls.character}/${id}`)
 }
 
 export {
