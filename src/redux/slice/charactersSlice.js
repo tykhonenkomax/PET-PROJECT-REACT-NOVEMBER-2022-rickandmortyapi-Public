@@ -21,7 +21,7 @@ const getAll = createAsyncThunk(
 )
 const getById = createAsyncThunk(
     'characterSlice/getById',
-    async (id, {rejectedWithValue}) => {
+    async ({id}, {rejectedWithValue}) => {
         try {
             const {data} = await characterServices.getById(id);
             return data

@@ -25,6 +25,7 @@ const episodeSlice = createSlice({
     extraReducers: builder =>
         builder
             .addCase(getAll.fulfilled, (state, action) => {
+                state.episodes=action.payload?.results
                 state.loading = false
             })
             .addCase(getAll.rejected, (state, action) => {

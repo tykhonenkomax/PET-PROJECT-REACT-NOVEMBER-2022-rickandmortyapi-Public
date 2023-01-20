@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
-
-import {useDispatch, useSelector} from "react-redux";
-import {episodeAction} from "../../redux";
+import {useDispatch, useSelector} from 'react-redux'
+import {episodeAction, locationAction} from "../../redux";
 
 import {Episode} from "../episode/Episode";
 
@@ -14,6 +13,7 @@ const Episodes = () => {
     useEffect(() => {
         dispatch(episodeAction.getAll())
     }, [dispatch])
+
 
     return (
 

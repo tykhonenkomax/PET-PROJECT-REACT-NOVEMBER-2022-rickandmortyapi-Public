@@ -14,7 +14,7 @@ const Location = ({location}) => {
             <div className='locationStyleName'>{type}</div>
             <div className='styleName'>Dimension</div>
             <div className='locationStyleName'>{dimension}</div>
-            <NavLink to={id.toString()} state={location}><button className='buttonStyle'>About Residents</button> </NavLink>
+            <NavLink to={id.toString()} state={location}><button className='buttonStyle'>Inhabitants of the planet</button> </NavLink>
         </div>
 
     );

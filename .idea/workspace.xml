@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bda5f4c-380e-40db-9bf4-7476d9eccaf4" name="Changes" comment="getById from location">
-      <change afterPath="$PROJECT_DIR$/src/components/locationDetails/locationDetails.scss.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/residents/Residents.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/residents/residents.scss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="5bda5f4c-380e-40db-9bf4-7476d9eccaf4" name="Changes" comment="location axios problem">
+      <change afterPath="$PROJECT_DIR$/src/components/episodeDetails/EpisodeDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/episode/Episode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/episode/Episode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/episodes/Episodes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/episodes/Episodes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/location/Location.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/location/Location.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/location/location.module.scss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/location/location.module.scss.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/locationDetails/LocationDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/locationDetails/LocationDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/residents/Residents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/residents/Residents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/residents/residents.scss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/residents/residents.scss.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/slice/charactersSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slice/charactersSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slice/episodeSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slice/episodeSlice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/slice/locationSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slice/locationSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/characters.services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/characters.services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/location.services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/location.services.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -142,7 +143,11 @@
       <workItem from="1673865256440" duration="1361000" />
       <workItem from="1673867030073" duration="8294000" />
       <workItem from="1674044866558" duration="845000" />
-      <workItem from="1674068917701" duration="8931000" />
+      <workItem from="1674068917701" duration="9270000" />
+      <workItem from="1674126203798" duration="141000" />
+      <workItem from="1674126778246" duration="307000" />
+      <workItem from="1674134480468" duration="2041000" />
+      <workItem from="1674160373961" duration="9067000" />
     </task>
     <task id="LOCAL-00001" summary="finally I fixed the redax hooray!!!">
       <created>1673823072388</created>
@@ -165,7 +170,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674066073753</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="location axios problem">
+      <created>1674084172736</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674084172736</updated>
+    </task>
+    <task id="LOCAL-00005" summary="location axios problem">
+      <created>1674084202248</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674084202248</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +205,7 @@
     <MESSAGE value="finally I fixed the redax hooray!!!" />
     <MESSAGE value="finally I fixed the redax hooray!!! small fix" />
     <MESSAGE value="getById from location" />
-    <option name="LAST_COMMIT_MESSAGE" value="getById from location" />
+    <MESSAGE value="location axios problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="location axios problem" />
   </component>
 </project>
