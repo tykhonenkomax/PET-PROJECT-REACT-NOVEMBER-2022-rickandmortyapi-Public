@@ -6,8 +6,8 @@ import {Episode} from "../episode/Episode";
 
 const Episodes = () => {
 
-
     const {episodes, loading, error} = useSelector(state => state.episode);
+
     const dispatch = useDispatch();
 
     useEffect(() => {
