@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bda5f4c-380e-40db-9bf4-7476d9eccaf4" name="Changes" comment="getById problem render in another component">
-      <change afterPath="$PROJECT_DIR$/src/components/episode/hook.js" afterDir="false" />
+    <list default="true" id="5bda5f4c-380e-40db-9bf4-7476d9eccaf4" name="Changes" comment="getById problem render in another component part2">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/episode/Episode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/episode/Episode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/episodes/Episodes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/episodes/Episodes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/urls.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,22 +41,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="npm.start">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="PET_rickandmortyapi_freeAPI_react_november2022" />
@@ -141,7 +140,8 @@
       <workItem from="1674126778246" duration="307000" />
       <workItem from="1674134480468" duration="2041000" />
       <workItem from="1674160373961" duration="10287000" />
-      <workItem from="1674245392194" duration="2063000" />
+      <workItem from="1674245392194" duration="2242000" />
+      <workItem from="1674248417751" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary="finally I fixed the redax hooray!!!">
       <created>1673823072388</created>
@@ -185,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674172892390</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="getById problem render in another component part2">
+      <created>1674247739779</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674247739779</updated>
+    </task>
+    <task id="LOCAL-00008" summary="getById problem render in another component part2">
+      <created>1674247768462</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674247768462</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +222,7 @@
     <MESSAGE value="getById from location" />
     <MESSAGE value="location axios problem" />
     <MESSAGE value="getById problem render in another component" />
-    <option name="LAST_COMMIT_MESSAGE" value="getById problem render in another component" />
+    <MESSAGE value="getById problem render in another component part2" />
+    <option name="LAST_COMMIT_MESSAGE" value="getById problem render in another component part2" />
   </component>
 </project>
