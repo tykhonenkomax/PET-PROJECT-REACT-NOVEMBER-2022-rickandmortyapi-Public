@@ -2,6 +2,7 @@ import React from 'react';
 
 import {useGetEpisodeHook} from "./hooks";
 import css from './episodeList.module.scss.css'
+import {useSelector} from "react-redux";
 
 
 const EpisodeList = ({episodeUrl}) => {

@@ -1,9 +1,9 @@
-import React, {useEffect, useState, useMemo} from 'react';
+import React, {useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux'
 import {locationAction} from '../../redux'
-import {useGetLocationHook} from './hook'
 
-const Episode = ({episode}) => {
+
+const Episode = ({episode,getByResident}, ) => {
 
     const {id, name, type, url} = episode;
 
@@ -15,12 +15,10 @@ const Episode = ({episode}) => {
         }, [dispatch]
     )
 
- const episodehook = useGetLocationHook(url)
 
     return (
 
         <div>
-            {episodehook && episodehook.name}
             <div>{locationById && <div>
                 <div>{locationById.name}</div>
                 <div>{locationById.type}</div>
@@ -29,7 +27,7 @@ const Episode = ({episode}) => {
             </div>
             <div>{name}</div>
             <div>{type}</div>
-            <button onClick={() => dispatch(locationAction.getById({id}))}>GetByID</button>
+            <button onClick={() => getByResident(url)}>getByResident</button>
         </div>
 
     );
